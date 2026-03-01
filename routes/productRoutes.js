@@ -4,7 +4,7 @@ const { protect, admin } = require("../middleware/authMiddleware");
 const { createProduct, getProducts, getProductById, updateProduct, deleteProduct } = require("../controllers/productController");
 
 const multer = require("multer");
-const { CloudinaryStorage } = require("multer-storage-cloudinary");
+const CloudinaryStorage = require("multer-storage-cloudinary");
 const cloudinary = require("../utils/cloudinary");
 
 const storage = new CloudinaryStorage({
